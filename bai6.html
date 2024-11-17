@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 6</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/x-icon" href="./sa4.ico">
+		<meta property="og:title" content="Hướng dẫn HTML - Tin học 12">
+		<meta property="og:description" content="Web được tạo bởi naLTheDuck">
+		<meta property="og:url" content="https://pewzew.github.io/SA4-HTML">
+		<meta property="og:type" content="website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			red { color: red; }
+			body {text-align: center;}
+			table {margin: auto;}
+		</style>
+	</head>
+	<body>
+		<a href="./index.html"><img src="./assets/sa4.jpg" width="20%" height="20%"></a>
+		<h1>Bài 6 - Tạo biểu mẫu</h1>
+		<p><i>Nói 1 chút về lý thuyết thì biểu mẫu cơ bản là 1 giao diện để thu nhập thông tin từ người dùng</i></p>
+		<p>Cú pháp tạo 1 biểu mẫu cơ bản: <red>&lt;form action = "</red>url<red>" method = "</red>GET/POST<red>"&gt;</red>Các dạng điều khiển nhập dữ liệu<red>&lt;/form&gt;</red></p>
+		<p><table border="1">
+			<caption>Giải thích 1 số thuộc tính trong cú pháp trên</caption>
+			<tr>
+				<td>action</td>
+				<td>Xác định tài nguyên web sẽ tiếp nhận và xử lý (thường là PHP, Java, Python)</td>
+			</tr>
+			<tr>
+				<td>method</td>
+				<td>Xác định phương thức gửi dữ liệu (GET (mặc định) bị hạn chế về dung lượng; POST không bị hạn chế về dung lượng)</td>
+			</tr>
+		</table></p>
+		<h2>Một số điều khiển hỗ trợ nhập dữ liệu & nút lệnh</h2>
+		<p>Cú pháp để nhập ký tự: <red>&lt;input type = "text" name = "</red>Tên_điều_khiển<red>" value="</red>Giá trị<red>"&gt;</red></p>
+		<p><table border="1">
+			<caption>Giải thích 1 số thuộc tính trong cú pháp trên</caption>
+			<tr>
+				<td>name</td>
+				<td>Tuy không bắt buộc, thuộc tính này cần thiết để tiện cho việc quản lý dữ liệu thông qua tên</td>
+			</tr>
+			<tr>
+				<td>value</td>
+				<td>Nếu được gán trong thẻ input thì trong ô chữ để sẵn chữ "Giá trị"</td>
+			</tr>
+		</table></p>
+		<p>Ngoài ô text, html còn cung cấp thêm 1 số điều khiển hỗ trợ nhập dữ liệu:</p>
+		<p><table border="1">
+			<tr>
+				<td>Phần tử</td>
+				<td>Mục đích</td>
+				<td>Ví dụ</td>
+			</tr>
+			<tr>
+				<td>textarea</td>
+				<td>Tạo 1 ô nhập văn bản</td>
+				<td>&lt;textarea name="Comments" rows="5" cols="60"&gt;&lt;/textarea&gt;</td>
+			</tr>
+			<tr>
+				<td>label</td>
+				<td>Tạo 1 nhãn mô tả</td>
+				<td>&lt;label&gt;Địa chỉ email:&lt;/label&gt;</td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td>Tạo ô text mật khẩu</td>
+				<td>&lt;input type="password" name="MatKhau"&gt;</td>
+			</tr>
+		</table></p>
+		<p>Dưới đây là 1 ví dụ về việc sử dụng biểu mẫu có ô văn bản để tên đăng nhập, email, mật khẩu và bình luận:</p>
+		<img src="./assets/textbox.png" width="50%">
+		<p><a href="./textbox.html">Web hiển thị sẽ trông như này</a></p>
+		<p>Còn nữa...</p>
+		<p><a href="index.html">Quay về trang chủ</a></p>
+	</body>
+</html>
